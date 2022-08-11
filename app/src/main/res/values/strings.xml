@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assigment_minhngph25430</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_menu_main">Open Menu Main</string>
+    <string name="close_menu_main">Close Menu Main</string>
+</resources>

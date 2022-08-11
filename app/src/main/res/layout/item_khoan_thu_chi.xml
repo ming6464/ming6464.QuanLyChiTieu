@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    android:layout_margin="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_khoan_thu_chi_gui1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            cardview:layout_constraintGuide_percent="0.02"
+            android:orientation="vertical" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_khoan_thu_chi_gui2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            cardview:layout_constraintGuide_percent="0.85"
+            android:orientation="vertical" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_khoan_thu_chi_gui3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            cardview:layout_constraintGuide_percent="0.97"
+            android:orientation="vertical" />
+        <TextView
+            cardview:layout_constraintEnd_toStartOf="@id/item_khoan_thu_chi_gui2"
+            android:id="@+id/item_khoan_thu_chi_tv_STT"
+            android:layout_width="0dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintStart_toEndOf="@id/item_khoan_thu_chi_gui1"
+            android:text="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/biryani_semibold"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/item_khoan_thu_chi_tv_giaTien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biryani_semibold"
+            android:text="19.0000"
+            android:gravity="left"
+            cardview:layout_constraintEnd_toStartOf="@id/item_khoan_thu_chi_gui2"
+            android:textColor="#E91E63"
+            android:textSize="22sp"
+            cardview:layout_constraintStart_toEndOf="@id/item_khoan_thu_chi_gui1"
+            cardview:layout_constraintTop_toBottomOf="@id/item_khoan_thu_chi_tv_STT" />
+        <TextView
+            android:id="@+id/item_khoan_thu_chi_tv1"
+            android:fontFamily="@font/biryani_semibold"
+            android:textColor="@color/purple_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã: "
+            android:textSize="18sp"
+            cardview:layout_constraintStart_toEndOf="@id/item_khoan_thu_chi_gui1"
+            cardview:layout_constraintTop_toBottomOf="@id/item_khoan_thu_chi_tv_giaTien"/>
+        <TextView
+            android:id="@+id/item_khoan_thu_chi_tv_maThuChi"
+            android:fontFamily="@font/biryani_semibold"
+            android:textColor="@color/purple_700"
+            android:layout_width="0dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:text="PH1"
+            cardview:layout_constraintEnd_toStartOf="@id/item_khoan_thu_chi_gui2"
+            cardview:layout_constraintStart_toEndOf="@id/item_khoan_thu_chi_tv1"
+            cardview:layout_constraintTop_toBottomOf="@id/item_khoan_thu_chi_tv_giaTien"
+            android:textSize="18sp"/>
+        <ImageButton
+            android:id="@+id/item_khoan_thu_chi_imgBtn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintStart_toEndOf="@id/item_khoan_thu_chi_gui2"
+            cardview:layout_constraintEnd_toStartOf="@id/item_khoan_thu_chi_gui3"
+            android:src="@drawable/edit_35"
+            android:background="@null"
+            />
+        <ImageButton
+            android:id="@+id/item_khoan_thu_chi_imgBtn_remove"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cardview:layout_constraintTop_toBottomOf="@id/item_khoan_thu_chi_imgBtn_edit"
+            cardview:layout_constraintStart_toEndOf="@id/item_khoan_thu_chi_gui2"
+            cardview:layout_constraintEnd_toStartOf="@id/item_khoan_thu_chi_gui3"
+            android:src="@drawable/remove_35"
+            android:background="@null"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

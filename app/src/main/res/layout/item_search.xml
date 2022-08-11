@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/item_search_et_thanhTimKiem"
+        app:backgroundTint="@color/purple_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:hint="Nhập vào tên"
+        android:textColorHint="#8CF412"
+        android:layout_marginStart="30dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_search_btn_timKiem"
+        android:layout_width="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Tìm kiếm"
+        android:background="@drawable/corner_18_stroke_green"/>
+
+</LinearLayout>

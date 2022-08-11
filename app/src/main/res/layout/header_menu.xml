@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/background_navi"
+    android:paddingStart="15dp"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/header_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/biryani_semibold"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have a good day!"
+        android:fontFamily="@font/biryani_semibold"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+</LinearLayout>
